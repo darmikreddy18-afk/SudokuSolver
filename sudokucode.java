@@ -1,13 +1,9 @@
 public class sudokucode {
 
-public static void sudosolver(int grid[][],int row,int col){
-if(finalsudoku(grid,0, 0)){
+public static boolean sudosolver(int grid[][],int row,int col){
+return finalsudoku(grid,0, 0));
 
-prints(grid);
-}
-else{
-    System.out.println("Invalid Sudoku");
-}
+
 
 
     }
@@ -72,34 +68,7 @@ return  finalsudoku(grid, newrow, newcol);
 
 
     }
-
     
-    public static void prints(int[][] grid){
-        for(int i=0;i<9;i++){
-            for(int j=0;j<9;j++){
-                System.out.print(grid[i][j]+" ");
-            }
-
-            System.out.println();
-        }
-
-    }
     
-    public static void main(String[] args) {
-        int[][] grid={
-    {5, 3, 0, 0, 7, 0, 0, 0, 0},
-    {6, 0, 0, 1, 9, 5, 0, 0, 0},
-    {0, 9, 8, 0, 0, 0, 0, 6, 0},
-    {8, 0, 0, 0, 6, 0, 0, 0, 3},
-    {4, 0, 0, 8, 0, 3, 0, 0, 1},
-    {7, 0, 0, 0, 2, 0, 0, 0, 6},
-    {0, 6, 0, 0, 0, 0, 2, 8, 0},
-    {0, 0, 0, 4, 1, 9, 0, 0, 5},
-    {0, 0, 0, 0, 8, 0, 0, 7, 9}
-};
-sudosolver(grid,0,0);
-
-        
-    }
     
 }
