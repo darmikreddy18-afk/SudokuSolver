@@ -1,6 +1,6 @@
 public class sudokucode {
 
-public static boolean sudosolver(int grid[][],int row,int col){
+public static boolean sudosolver(int grid[][]){
 return finalsudoku(grid,0, 0);
 
 
