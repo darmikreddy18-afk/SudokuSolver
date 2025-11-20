@@ -1,7 +1,7 @@
 public class sudokucode {
 
 public static boolean sudosolver(int grid[][],int row,int col){
-return finalsudoku(grid,0, 0));
+return finalsudoku(grid,0, 0);
 
 
 
