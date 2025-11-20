@@ -6,7 +6,7 @@ if(finalsudoku(grid,0, 0)){
 prints(grid);
 }
 else{
-    System.out.println("invalid sudoku");
+    System.out.println("Invalid Sudoku");
 }
 
 
